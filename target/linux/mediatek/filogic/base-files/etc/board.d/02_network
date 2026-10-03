@@ -93,6 +93,9 @@ mediatek_setup_interfaces()
 	xiaomi,redmi-router-ax6000)
 		ucidef_set_interfaces_lan_wan "lan2 lan3 lan4" wan
 		;;
+	fzs,5gcpe-p5)
+		ucidef_set_interfaces_lan_wan lan wan
+		;;
 	*)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
 		;;
